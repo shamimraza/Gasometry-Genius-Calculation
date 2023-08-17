@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gasometry Genius</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="flex flex-col lg:flex-row">
+            <div class=" gap-6 mt-4 ml-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <!-- card 1 -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="./images/triangle.png" alt="card" /></figure>
+                    <div class="card-body">
+                        <h2 class="text-center text-2xl">Triangle</h2>
+                        <p class="text-center">Area (A) = 0.5 x b x h</p>
+                        <p class="flex mx-auto gap-3">
+                            <input class="bg-gray-200 w-24 pl-2"  type="text" placeholder="b" name="" id="input-base"> <span>cm</span>
+                            <input class="bg-gray-200 w-24 pl-2"  type="text" placeholder="b" name="" id="input-height"> <span>cm</span>
+                        </p>
+                        <p>aria:<span id="span"> 0</span>cm <sup>2</sup></p>
+                        <div class="card-actions ">
+                            <button onclick="calculateButton()" class="btn btn-primary w-full">calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="./images/rectangle.png" alt="card" /></figure>
+                    <div class="card-body">
+                        <h2 class="text-center text-2xl">Rectangle</h2>
+                        <p class="text-center">Area (A) = b x I</p>
+                        <p class="flex mx-auto gap-3">
+                            <input class="bg-gray-200 w-24 pl-2"  type="text" placeholder="w" name="" id="base-input"> <span>cm</span>
+                            <input class="bg-gray-200 w-24 pl-2"  type="text" placeholder="I" name="" id="input-length"> <span>cm</span>
+                        </p>
+                        <p>aria:<span id="spanB"> 0</span>cm <sup>2</sup></p>
+                        <div class="card-actions ">
+                            <button onclick="calculateRectangle()" class="btn btn-primary w-full">calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 1 -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="./images/rectangle.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 1 -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="./images/parallelogram.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[400px] flex-1 text-center">
+                <h3>Area Calculation</h3>
+            </div>
+        </div>
+    </main>
+    <script src="./js/calculate.js"></script>
+</body>
+
+</html>
