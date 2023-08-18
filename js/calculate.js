@@ -37,7 +37,7 @@ function calculateRectangle() {
     const baseLength = document.getElementById("input-length");
     const baseN = baseLength.value;
     if (baseN == "") {
-        alert('please provide a valid number')
+        alert('please provide a valid number ymm')
         return;
     }
     const baseNum = parseFloat(baseN);
