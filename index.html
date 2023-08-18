@@ -23,8 +23,10 @@
                         <h2 class="text-center text-2xl">Triangle</h2>
                         <p class="text-center">Area (A) = 0.5 x b x h</p>
                         <p class="flex mx-auto gap-3">
-                            <input class="bg-gray-200 w-24 pl-2"  type="text" placeholder="b" name="" id="input-base"> <span>cm</span>
-                            <input class="bg-gray-200 w-24 pl-2"  type="text" placeholder="b" name="" id="input-height"> <span>cm</span>
+                            <input class="bg-gray-200 w-24 pl-2" type="text" placeholder="b" name="" id="input-base">
+                            <span>cm</span>
+                            <input class="bg-gray-200 w-24 pl-2" type="text" placeholder="b" name="" id="input-height">
+                            <span>cm</span>
                         </p>
                         <p>aria:<span id="span"> 0</span>cm <sup>2</sup></p>
                         <div class="card-actions ">
@@ -39,12 +41,50 @@
                         <h2 class="text-center text-2xl">Rectangle</h2>
                         <p class="text-center">Area (A) = b x I</p>
                         <p class="flex mx-auto gap-3">
-                            <input class="bg-gray-200 w-24 pl-2"  type="text" placeholder="w" name="" id="base-input"> <span>cm</span>
-                            <input class="bg-gray-200 w-24 pl-2"  type="text" placeholder="I" name="" id="input-length"> <span>cm</span>
+                            <input class="bg-gray-200 w-24 pl-2" type="text" placeholder="w" name="" id="base-input">
+                            <span>cm</span>
+                            <input class="bg-gray-200 w-24 pl-2" type="text" placeholder="I" name="" id="input-length">
+                            <span>cm</span>
                         </p>
                         <p>aria:<span id="spanB"> 0</span>cm <sup>2</sup></p>
                         <div class="card-actions ">
                             <button onclick="calculateRectangle()" class="btn btn-primary w-full">calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="./images/pentagon.png" alt="card" /></figure>
+                    <div class="card-body">
+                        <h2 class="text-center text-2xl">parallelogram</h2>
+                        <p class="text-center">Area (A) = b x h</p>
+                        <p class="flex mx-auto gap-3">
+                            <input class="bg-gray-200 w-24 pl-2" type="text" placeholder="w" name=""
+                                id="parallelogram-base"> <span>cm</span>
+                            <input class="bg-gray-200 w-24 pl-2" type="text" placeholder="h" name=""
+                                id="parallelogram-height"> <span>cm</span>
+                        </p>
+                        <p>aria:<span id="span3"> 0</span>cm <sup>2</sup></p>
+                        <div class="card-actions ">
+                            <button onclick="calculateParallelogram()" class="btn btn-primary w-full">calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 4 -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="./images/ellipse.png" alt="card" /></figure>
+                    <div class="card-body">
+                        <h2 class="text-center text-2xl">ellipse</h2>
+                        <p class="text-center">Area (A) = π ab</p>
+                        <p class="flex mx-auto gap-3">
+                            <input class="bg-gray-200 w-24 pl-2" type="text" placeholder="w" name="" id="ellipse-mejor">
+                            <span>cm</span>
+                            <input class="bg-gray-200 w-24 pl-2" type="text" placeholder="h" name="" id="ellipse-minor">
+                            <span>cm</span>
+                        </p>
+                        <p>aria:<span id="ellipse-span"> 0</span>cm <sup>2</sup></p>
+                        <div class="card-actions ">
+                            <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">calculate</button>
                         </div>
                     </div>
                 </div>
@@ -72,7 +112,7 @@
                 </div>
             </div>
             <div class="w-[400px] flex-1 text-center">
-                <h3>Area Calculation</h3>
+                <h3 class="underline text-3xl">Area Calculation</h3>
             </div>
         </div>
     </main>
