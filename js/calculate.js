@@ -86,7 +86,8 @@ function calculateEllipseArea() {
         return 0;
     }
     const total = 3.14 * ellipseMajor * ellipseMinor;
-    elementInnerText('ellipse-span', total)
+    const toFixed = total.toFixed(2);
+    elementInnerText('ellipse-span', toFixed)
 }
 
 
