@@ -10,14 +10,21 @@
 </head>
 
 <body>
-    <header>
+    <header class="bg-[#1090D81A] h-24 mt-10 m-7">
+        <div class="justify-between flex m-10">
+            <div class="p-3">
+                <h1 class="text-4xl font-semibold ">Interactive</h1>
+                <h3 class="">Geometry Genius</h3>
+            </div>
+            <button id="button" class="btn btn-primary mt-7 text-white">Blog</button>
+        </div>
 
     </header>
     <main>
         <div class="flex flex-col lg:flex-row">
             <div class=" gap-6 mt-4 ml-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <!-- card 1 -->
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card w-80 bg-base-100 shadow-xl">
                     <figure><img src="./images/triangle.png" alt="card" /></figure>
                     <div class="card-body">
                         <h2 class="text-center text-2xl">Triangle</h2>
@@ -35,7 +42,7 @@
                     </div>
                 </div>
                 <!-- card 2 -->
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card w-80 bg-base-100 shadow-xl">
                     <figure><img src="./images/rectangle.png" alt="card" /></figure>
                     <div class="card-body">
                         <h2 class="text-center text-2xl">Rectangle</h2>
@@ -48,12 +55,12 @@
                         </p>
                         <p>aria:<span id="spanB"> 0</span>cm <sup>2</sup></p>
                         <div class="card-actions ">
-                            <button onclick="calculateRectangle()" class="btn btn-primary w-full">calculate</button>
+                            <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">calculate</button>
                         </div>
                     </div>
                 </div>
                 <!-- card 3 -->
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card w-80 bg-base-100 shadow-xl">
                     <figure><img src="./images/pentagon.png" alt="card" /></figure>
                     <div class="card-body">
                         <h2 class="text-center text-2xl">parallelogram</h2>
@@ -71,7 +78,7 @@
                     </div>
                 </div>
                 <!-- card 4 -->
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card w-80 bg-base-100 shadow-xl">
                     <figure><img src="./images/ellipse.png" alt="card" /></figure>
                     <div class="card-body">
                         <h2 class="text-center text-2xl">ellipse</h2>
@@ -88,35 +95,56 @@
                         </div>
                     </div>
                 </div>
-                <!-- card 1 -->
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="./images/rectangle.png" alt="Shoes" /></figure>
+                <!-- card 5 -->
+                <div class="card w-80 bg-base-100 shadow-xl">
+                    <figure><img src="./images/rhombus.png" alt="card" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                        <h2 class="text-center text-2xl">Rhombus</h2>
+                        <p class="text-center">Area (A) =0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+                        <p class="flex mx-auto gap-3">
+                            <input class="bg-gray-200 w-24 pl-2" type="text" placeholder="w" name="" id="rhombus-base">
+                            <span>cm</span>
+                            <input class="bg-gray-200 w-24 pl-2" type="text" placeholder="h" name=""
+                                id="rhombus-height">
+                            <span>cm</span>
+                        </p>
+                        <p>aria:<span id="rhombus-span"> 0</span>cm <sup>2</sup></p>
+                        <div class="card-actions ">
+                            <button onclick="calculateRhombusArea()" class="btn btn-primary w-full">calculate</button>
                         </div>
                     </div>
                 </div>
-                <!-- card 1 -->
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="./images/parallelogram.png" alt="Shoes" /></figure>
+                <!-- card 6 -->
+                <div class="card w-80 bg-base-100 shadow-xl">
+                    <figure><img src="./images/pentagon.png" alt="card" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                        <h2 class="text-center text-2xl">Pentagon</h2>
+                        <p class="text-center">Area (A) =0.5 p x b</p>
+                        <p class="flex mx-auto gap-3">
+                            <input class="bg-gray-200 w-24 pl-2" type="text" placeholder="w" name="" id="pentagon-base">
+                            <span>cm</span>
+                            <input class="bg-gray-200 w-24 pl-2" type="text" placeholder="h" name=""
+                                id="pentagon-height">
+                            <span>cm</span>
+                        </p>
+                        <p>aria:<span id="pentagon-span"> 0</span>cm <sup>2</sup></p>
+                        <div class="card-actions ">
+                            <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">calculate</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="w-[400px] flex-1 text-center">
+            <div class="w-[500px] flex-1 text-center">
                 <h3 class="underline text-3xl">Area Calculation</h3>
+                <div id="dynamic-use">
+
+                </div>
             </div>
+
         </div>
     </main>
     <script src="./js/calculate.js"></script>
+    <script src="./js/button.js"></script>
 </body>
 
 </html>
