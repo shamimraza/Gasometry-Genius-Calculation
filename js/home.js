@@ -1,4 +1,3 @@
 document.getElementById("button").addEventListener('click', function(){
-    window.location.href="blogs.html"
+    window.location.href="index.html"
 })
-
